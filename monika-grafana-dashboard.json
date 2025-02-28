@@ -1,47 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_PROMETHEUS",
-      "label": "prometheus",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "11.4.0"
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -62,7 +19,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 1,
   "links": [],
   "panels": [
     {
@@ -135,7 +92,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${datasource}"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -209,11 +166,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Total Running Probes",
@@ -222,7 +175,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -281,11 +234,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Total Alerts Triggered",
@@ -353,11 +302,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Total Notifications Triggered",
@@ -366,7 +311,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -456,7 +401,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -479,8 +424,8 @@
           "options": {
             "include": {
               "names": [
-                "id",
-                "Value"
+                "Value",
+                "name"
               ]
             }
           }
@@ -586,11 +531,7 @@
           "legendFormat": "__auto",
           "range": false,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Alerts Triggered",
@@ -612,7 +553,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -702,11 +643,7 @@
           "legendFormat": "__auto",
           "range": false,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Notifications Triggered",
@@ -850,11 +787,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Running Probes by Time",
@@ -863,7 +796,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -953,7 +886,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -1099,11 +1032,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Probes Status by Time",
@@ -1112,7 +1041,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1202,7 +1131,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -1329,11 +1258,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Probes Response Size by Time (in bytes)",
@@ -1342,7 +1267,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1418,7 +1343,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -1536,7 +1461,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "code",
@@ -1632,7 +1557,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "code",
@@ -1696,7 +1621,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "barWidthFactor": 0.6,
-            "drawStyle": "line",
+            "drawStyle": "points",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -1744,7 +1669,7 @@
               "options": {
                 "mode": "exclude",
                 "names": [
-                  "{__name__=\"monika_notifications_triggered\", instance=\"host.docker.internal:9100\", job=\"monika\", status=\"success\", type=\"discord\"}"
+                  "{instance=\"host.docker.internal:9100\", job=\"monika\", status=\"success\", type=\"discord\"}"
                 ],
                 "prefix": "All except:",
                 "readOnly": true
@@ -1786,18 +1711,14 @@
       "targets": [
         {
           "disableTextWrap": false,
-          "editorMode": "builder",
-          "expr": "monika_notifications_triggered",
+          "editorMode": "code",
+          "expr": "changes(monika_notifications_triggered[1m]) > 0",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Notifications Triggered by Time",
@@ -1806,7 +1727,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1883,7 +1804,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -1934,7 +1855,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "barWidthFactor": 0.6,
-            "drawStyle": "line",
+            "drawStyle": "points",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -1999,18 +1920,14 @@
       "targets": [
         {
           "disableTextWrap": false,
-          "editorMode": "builder",
-          "expr": "monika_notifications_triggered{status=\"success\"}",
+          "editorMode": "code",
+          "expr": "changes(monika_notifications_triggered{status=\"success\"}[1m]) > 0",
           "fullMetaSearch": false,
-          "includeNullMetadata": true,
+          "includeNullMetadata": false,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Successful Notifications Triggered by Time",
@@ -2019,7 +1936,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2096,7 +2013,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -2147,7 +2064,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "barWidthFactor": 0.6,
-            "drawStyle": "line",
+            "drawStyle": "points",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -2237,18 +2154,14 @@
       "targets": [
         {
           "disableTextWrap": false,
-          "editorMode": "builder",
-          "expr": "monika_notifications_triggered{status=\"failed\"}",
+          "editorMode": "code",
+          "expr": "changes(monika_notifications_triggered{status=\"failed\"}[1m]) > 0",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          }
+          "useBackend": false
         }
       ],
       "title": "Failed Notifications Triggered by Time",
@@ -2257,7 +2170,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2339,7 +2252,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -2403,7 +2316,7 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "barWidthFactor": 0.6,
-            "drawStyle": "line",
+            "drawStyle": "points",
             "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
@@ -2469,11 +2382,11 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
-          "editorMode": "builder",
-          "expr": "monika_alerts_triggered",
+          "editorMode": "code",
+          "expr": "changes(monika_alerts_triggered[1m]) > 0",
           "fullMetaSearch": false,
           "hide": false,
           "includeNullMetadata": true,
@@ -2597,7 +2510,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "ae8uzlm41hq80a"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -2671,6 +2584,7 @@
       "type": "table"
     }
   ],
+  "preload": false,
   "refresh": "30s",
   "schemaVersion": 40,
   "tags": [
@@ -2679,7 +2593,10 @@
   "templating": {
     "list": [
       {
-        "current": {},
+        "current": {
+          "text": "prometheus",
+          "value": "ae8uzlm41hq80a"
+        },
         "description": "This should point out to the Prometheus that scrapes Monika",
         "label": "Data Source",
         "name": "datasource",
@@ -2692,13 +2609,13 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "Monika Dashboard v1.0.0",
+  "title": "Monika Dashboard v1.0.1",
   "uid": "fe8uzt05cohs0d",
-  "version": 69,
+  "version": 76,
   "weekStart": ""
 }

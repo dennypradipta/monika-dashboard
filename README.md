@@ -25,10 +25,6 @@ A simple Monika dashboard to display the exported Prometheus statistics of a Mon
 ![Notifications](./images/3.png)
 ![Alerts](./images/4.png)
 
-## Caveats
-
-This is not ready yet as my [pull request is still pending](https://github.com/hyperjumptech/monika/pull/1338) so you need to build Monika from my branch. I'll update this README once it's merged.
-
 ## License
 
 MIT
